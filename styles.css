@@ -1,0 +1,287 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: rgba(122, 191, 191, 0.5);
+}
+body {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* Text Styling */
+h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 40px;
+    text-align: center;
+}
+h2 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px;
+}
+h3 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 25px;
+}
+nav a,
+menu li,
+#connect li,
+small,
+footer {
+    font-family: "Bebas Neue", cursive;
+    font-size: 20px;
+}
+p,
+dd,
+li,
+nav,
+input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+dt {
+    font-family: "Montserrat", sans-seif;
+    font-size: 16px;
+    font-weight: bold;
+}
+#navTop h2,
+#connect h2,
+#search h3 {
+    display: none;
+}
+/* Intro */
+#intro {
+    order: 0;
+    background-color: #f2f2f2;
+}
+.introContainer {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 12% 40% 45%;
+}
+#intro menu {
+    background-color: #fff;
+    border: 2px solid #eb5428;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#intro menu li {
+    color: #eb5428;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+#intro img {
+    width: 97%;
+}
+.paragraphContainer {
+    padding-right: 5px;
+    margin-left: -5px;
+    line-height: 2;
+}
+#intro p:last-of-type {
+    margin-top: 20px;
+}
+/* Details */
+#details {
+    background-color: #0d0d0d;
+    color: #7abdbd;
+    width: 100%;
+}
+#details h2 {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+#details dl {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 10px;
+}
+#details dt {
+    text-align: center;
+    grid-row: 1;
+}
+#details dd {
+    text-align: center;
+    grid-row: 2;
+}
+/* Ingredients */
+#ingredients {
+    background-color: #f2f2f2;
+    width: 20%;
+    padding: 5px 0 10px 25px;
+}
+#ingredients h2 {
+    padding: 10px 0 10px 10px;
+}
+#ingredients li {
+    padding: 5px 0;
+}
+/* Directions */
+#directions {
+    background-color: #f2f2f2;
+    width: 80%;
+}
+#directions h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+#directions li {
+    padding: 10px 0 10px 20px;
+}
+/* Side Dishes */
+#sideDishes {
+    background-color: #7abdbd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#sideDishes h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.recipeCard {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.recipeCard h3 {
+    order: 2;
+    padding: 5px;
+}
+.recipeCard img {
+    order: 1;
+    height: 250px;
+    margin-bottom: 5px;
+}
+.recipeCard p {
+    order: 3;
+    width: 95%;
+    padding: 0 0 10px 5px;
+}
+.recipeCard dl {
+    order: 4;
+    display: flex;
+    padding-left: 5px;
+}
+.recipeCard dt {
+    padding-right: 8px;
+}
+.recipeCard svg {
+    margin-bottom: 15px;
+}
+.filled {
+    fill: #eb5428;
+}
+/* Main Navigation */
+#navTop {
+    order: -1;
+    background-color: #fff;
+}
+.menuBtn,
+.hamburger {
+    display: none;
+}
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+nav li:first-of-type {
+    background-color: #eb5428;
+    width: 100px;
+    margin-right: 1vw;
+}
+.icon-tabler-tools-kitchen {
+    margin: 20px;
+}
+nav a {
+    color: #eb5428;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 20px 0;
+}
+nav img {
+    height: 75px;
+    margin-bottom: 2.5px;
+}
+.icon-tabler-user-circle {
+    stroke: #eb5428;
+    height: 75px;
+}
+.signIn {
+    color: #0d0d0d;
+    margin-left: 1vw;
+}
+/* Search */
+#search {
+    background-color: #f2f2f2;
+    box-shadow: inset 0 3px 5px 0 rgba(13, 13, 13, 0.2);
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 20px 0;
+}
+input[type="text"] {
+    font-size: 16px;
+    border: 2px solid #eb5428;
+    height: 40px;
+    width: 300px;
+}
+label {
+    position: absolute;
+    background-color: #eb5428;
+    height: 40px;
+}
+.icon-tabler-search {
+    stroke: #fff;
+    padding: 2px;
+}
+/* Footer */
+footer {
+    background-color: #fff;
+}
+footer menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    padding-top: 20px;
+}
+footer menu li {
+    color: #eb5428;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 45px;
+}
+footer menu svg {
+    margin: 0 auto;
+}
+footer img {
+    display: inline-block;
+    height: 200px;
+    margin: -90px 0 20px 0;
+}
+footer p {
+    font-family: "Bebas Neue", cursive;
+    font-size: 20px;
+    margin-left: 220px;
+}
+footer small {
+    margin-left: 228px;
+}
