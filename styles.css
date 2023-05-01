@@ -460,7 +460,7 @@ footer small {
     nav ul {
         flex-direction: column;
         margin: 0;
-        transition: ease-in-out 0.2s;
+        transition: ease-in-out max-height 0.3s;
         max-height: 0;
         overflow: hidden;
     }
@@ -498,8 +498,8 @@ footer small {
         user-select: none;
     }
     .menuBtn:checked ~ ul {
-        transition: ease-in-out 0.2s;
-        max-height: 375px;
+        transition: ease-in-out max-height 0.3s;
+        max-height: 100%;
         margin-top: 13px;
     }
     #search {
